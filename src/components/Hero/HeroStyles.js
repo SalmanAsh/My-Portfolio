@@ -17,3 +17,26 @@ export const LeftSection = styled.div`
     margin: 0 auto;
   }
 `;
+
+export const Name = styled.div`
+  text-align: center;
+  z-index: 20;
+  width: 100%;
+
+`;
+
+export const HeaderThree = styled.h3`
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #9cc9e3;
+  padding: .5rem 0;
+  font-size: ${(props) => props.title ? '6rem' : '5rem'};
+`;
+
+export const Hr = styled.hr`
+  width: 500px;
+  height: 3px;
+  margin: 20px auto;
+  border: 0;
+  background: #ffffffff;
+`;

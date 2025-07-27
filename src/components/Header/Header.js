@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { DiSmashingMagazine  } from 'react-icons/di';
+import { CgProfile } from "react-icons/cg";
 
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
 
@@ -10,7 +11,7 @@ const Header = () =>  (
     <Container>
       <Div1>
         <Link href="/">
-          <a style={{display: "flex", alignItems: "center", color: "white", marginBottom: "20"}}>
+          <a style={{display: "flex", alignItems: "center", color: "white", marginBottom: "20px"}}>
             <DiSmashingMagazine size="3rem"/><Span>Portfolio</Span>
           </a>
         </Link>
@@ -20,11 +21,6 @@ const Header = () =>  (
         <li>
           <Link href="#projects">
             <NavLink>Projects</NavLink>
-          </Link>
-        </li>
-        <li>
-          <Link href="#tech">
-            <NavLink>Technologies</NavLink>
           </Link>
         </li>
         <li>
