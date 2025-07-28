@@ -4,6 +4,8 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
+import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -35,16 +37,23 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+        <h3 
+            className='text-white text-[24px] font-bold'
+            style={{ margin: 0, fontSize: '30px'}}
+            >
+            
+            {experience.title}
+        
+        </h3>
         <p
           className='text-secondary text-[16px] font-semibold'
-          style={{ margin: 0 }}
+          style={{ margin: 5, fontSize: '20px'}}
         >
           {experience.company_name}
         </p>
       </div>
 
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
+      <ul className='mt-5 list-disc ml-5 space-y-2' >
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}

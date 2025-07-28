@@ -1,4 +1,5 @@
 import { DiSmashingMagazine  } from 'react-icons/di';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 export const projects = [
   {
@@ -51,7 +52,7 @@ export const experiences = [
   {
     title: "React.js Developer",
     company_name: "Starbucks",
-    icon: DiSmashingMagazine,
+    icon: AiFillGithub,
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [
@@ -64,7 +65,7 @@ export const experiences = [
   {
     title: "React Native Developer",
     company_name: "Tesla",
-    icon: DiSmashingMagazine,
+    icon: AiFillGithub,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
@@ -77,7 +78,7 @@ export const experiences = [
   {
     title: "Web Developer",
     company_name: "Shopify",
-    icon: DiSmashingMagazine,
+    icon: AiFillGithub,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
@@ -90,7 +91,7 @@ export const experiences = [
   {
     title: "Full stack Developer",
     company_name: "Meta",
-    icon: DiSmashingMagazine,
+    icon: AiFillGithub,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
