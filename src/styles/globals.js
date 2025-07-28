@@ -11,7 +11,6 @@ const GlobalStyles = createGlobalStyle`
   }
   html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
 
   }
   body {
@@ -30,6 +29,17 @@ const GlobalStyles = createGlobalStyle`
   }
   li{
     list-style: none;
+  }
+  .timeline-content {
+    transition: all 0.2s ease;
+  }
+
+  .timeline-content:hover {
+    transform: translateY(-15px);
+  }
+
+  .timeline-content:active {
+    transform: translateY(0);
   }
 
 `;

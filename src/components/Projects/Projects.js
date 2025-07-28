@@ -1,15 +1,16 @@
 import React from 'react';
 
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
+import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 
 const Projects = () => (
     <Section nopadding id="projects">
       <SectionDivider/>
       <SectionTitle>Projects</SectionTitle>
+      <SectionText>Learn about my projects completed over the years. Feel free to contact me if you have any questions.</SectionText>
       <GridContainer>
-        {projects.map(({ id, title, description, image, tags, source, visit }) => (
+        {projects.map(({ id, title, description, image, tags, source, visit, pdf }) => (
           <BlogCard key={id}>
 
             <Img src={image} />
@@ -31,8 +32,11 @@ const Projects = () => (
             </div>
 
             <UtilityList>
-              <ExternalLinks href={visit} target='blank'>Code</ExternalLinks>
-              {/* <ExternalLinks href={visit} target='blank'>Code</ExternalLinks> */}
+              {visit && (<ExternalLinks href={visit} target='blank'>Code</ExternalLinks>)}
+              {source && (<ExternalLinks href={source} target='blank'>Source</ExternalLinks>)}
+              {pdf && (
+                <ExternalLinks href={pdf} target="_blank">Report</ExternalLinks>
+              )}
             </UtilityList>
           </BlogCard>
 

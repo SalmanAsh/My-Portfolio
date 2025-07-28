@@ -30,6 +30,16 @@ export const BlogCard = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
+  
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+
 `;
 export const TitleContent = styled.div`
   text-align: center;
